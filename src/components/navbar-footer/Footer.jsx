@@ -70,7 +70,7 @@ function Footer() {
               </div>
 
               {/* Bottom Section - Newsletter Subscription */}
-              <div className="bg-gradient-to-r from-[#8B9B2F] to-[#7A8A26] rounded-2xl p-6">
+              <div className="bg-[#4A3C70] rounded-2xl p-6">
                 <h3 className="text-white font-medium uppercase text-sm tracking-[0.2em] inter mb-4 text-center">
                   Subscribe to Newsletter
                 </h3>
@@ -80,7 +80,7 @@ function Footer() {
                     placeholder="Enter your email"
                     className="w-full px-4 py-3 rounded-xl bg-white text-gray-700 placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-white/50 border-0"
                   />
-                  <button className="w-full px-6 poppins py-3 text-sm bg-white text-[#8B9B2F] rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105">
+                  <button className="w-full px-6 poppins py-3 text-sm bg-[#8B9B2F] text-white rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105">
                     Subscribe
                   </button>
                 </div>
