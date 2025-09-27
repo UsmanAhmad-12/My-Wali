@@ -1,0 +1,30 @@
+export { default as logo } from "./logo.png";
+export { default as ukFlag } from "./ukFlag.png";
+export { default as usFlag } from "./usFlag.png";
+export { default as caFlag } from "./caFlag.png";
+export { default as auFlag } from "./auFlag.png";
+export { default as deFlag } from "./deFlag.png";
+export { default as frFlag } from "./frFlag.png";
+export { default as itFlag } from "./itFlag.png";
+export { default as esFlag } from "./esFlag.png";
+export { default as heroImage } from "./heroImage.png";
+export { default as playstore } from "./playstore.png";
+export { default as featuresImage1 } from "./featuresImage1.png";
+export { default as featuresImage2 } from "./featuresImage2.png";
+export { default as howItWorksImage1 } from "./howItWorksImage1.png";
+export { default as howItWorksImage2 } from "./howItWorksImage2.png";
+export { default as howItWorksImage3 } from "./howItWorksImage3.png";
+export { default as guardianFlowImage1 } from "./guardianFlowImage1.png";
+export { default as coreFeaturesImage1 } from "./coreFeaturesImage1.png";
+export { default as coreFeaturesImage2 } from "./coreFeaturesImage2.png";
+export { default as coreFeaturesImage3 } from "./coreFeaturesImage3.png";
+export { default as coreFeaturesImage4 } from "./coreFeaturesImage4.png";
+export { default as coreFeaturesImage5 } from "./coreFeaturesImage5.png";
+export { default as coreFeaturesImage6 } from "./coreFeaturesImage6.png";
+export { default as ellipse } from "./ellipse.png";
+export { default as subscriptionImage1 } from "./subscriptionImage1.png";
+export { default as subscriptionImage2 } from "./subscriptionImage2.png";
+export { default as footerIcon1 } from "./footerIcon1.png";
+export { default as favicon } from "./favicon.ico";
+
+

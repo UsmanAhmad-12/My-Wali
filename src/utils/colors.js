@@ -1,0 +1,13 @@
+export const PRIMARY = "#2fbf66";
+export const PRIMARY_DARK = "#00ad72";
+export const HEADINGS_LIGHT = "#696868";
+export const BLACK = "#0D0D0D";
+export const BLACK_SHADY = "#000000cf";
+export const WHITE = "white";
+export const WHITE_SMOKE = "whitesmoke";
+export const RED = "#AE0000";
+export const PLACEHOLDER_COLOR = "#ffffff4f";
+export const GRAY = "#87808E";
+export const ERROR = "#f72b24";
+export const WARNING = "#f5bb1b";
+export const SUCCESS = "#13eb98";
