@@ -75,7 +75,7 @@ function CoreFeatures() {
                     <div className='flex-shrink-0 relative z-10'>
                         <img className='w-[100px] sm:w-[130px]' src={coreFeaturesImage6} alt="coreFeatures" />
                     </div>
-                    <div className='text-center sm:text-left'>
+                    <div className='text-center sm:text-left'> 
                         <h5 className='dm-serif-display text-xl sm:text-2xl md:text-3xl font-medium'>Masjid Partnerships</h5>
                         <p className='montserrat w-full sm:w-[90%] md:w-[55%] lg:w-[70%] text-[#363533] font-medium tracking-tight mt-2 sm:mt-3 text-sm sm:text-base lg:text-lg leading-5 sm:leading-6'>Masjids offering marriage services through MyWali can connect directly with you, providing trusted guidance & community-backed matches.</p>
                     </div>
