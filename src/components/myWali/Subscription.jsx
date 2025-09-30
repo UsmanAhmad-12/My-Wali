@@ -77,7 +77,7 @@ function Subscription() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-6 sm:py-8 md:py-12 px-4 sm:px-7 lg:px-8 relative">
+    <div className="min-h-screen bg-gray-50 py-6 sm:py-8 md:py-12 px-4 sm:px-7 lg:px-8 relative overflow-hidden">
       <div className="absolute top-[240px] left-0 hidden sm:block z-0">
         <img
           className="w-[80px] sm:w-[120px] md:w-[130px] opacity-30"

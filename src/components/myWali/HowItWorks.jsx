@@ -2,7 +2,7 @@ import React from 'react'
 import { howItWorksImage1, howItWorksImage2, howItWorksImage3 } from '../../assets/images/index.js'
 function HowItWorks() {
   return (
-    <div className='py-16 md:py-24 bg-[#fafafa] px-5 sm:px-10 lg:px-20'>
+    <div className='py-16 md:py-24 bg-[#fafafa] px-5 sm:px-10 lg:px-20 overflow-hidden'>
         <div>
             <h1 data-aos="fade-down" className='dm-serif-display text-[38px] leading-[45px] font-medium text-center'>How It Works</h1>
             <p data-aos="fade-up" className='montserrat font-medium text-[13px] tracking-tighter mx-auto lg:text-[18px] text-center leading-[25px] px-5 md:px-0 lg:w-[74%] mt-4 text-[#403F3D]'>At MyWali, we know that every marriage journey is unique. That’s why we’ve built three clear pathways, each rooted in faith, so guardians and seekers can choose the involvement that suits them best: </p>

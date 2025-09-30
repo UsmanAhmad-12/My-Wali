@@ -59,7 +59,7 @@ function Flow() {
   const [activeFlow, setActiveFlow] = useState("guardian");
 
   return (
-    <div className="py-5 md:py-28 bg-[#f4f1fa] px-5 md:px-20">
+    <div className="py-5 md:py-28 bg-[#f4f1fa] px-5 md:px-20 overflow-hidden">
       <div className="flex justify-center  gap-4 sm:gap-6 md:gap-8">
         <div onClick={() => setActiveFlow("guardian")}>
           <button data-aos="fade-right"
@@ -103,7 +103,7 @@ function Flow() {
         </div>
       )}
       {activeFlow === "seeker" && (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+        <div data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {seekerFlow.map((item, index) => (
             <div className="mt-20 flex flex-col items-center gap-4" key={index}>
               <img className="w-[60%] sm:w-[80%] mx-auto" src={item.image} alt="" />

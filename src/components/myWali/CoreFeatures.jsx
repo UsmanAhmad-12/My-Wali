@@ -3,7 +3,7 @@ import { coreFeaturesImage1 } from '../../assets/images/index.js'
 import { coreFeaturesImage2, coreFeaturesImage3, coreFeaturesImage4, coreFeaturesImage5, coreFeaturesImage6, ellipse} from '../../assets/images/index.js'
 function CoreFeatures() {
   return (
-    <div className='bg-[#fafafa] py-6 px-4 sm:py-8 sm:px-6 md:py-20 md:px-10 relative'>
+    <div className='bg-[#fafafa] py-6 px-4 sm:py-8 sm:px-6 md:py-20 md:px-10 relative overflow-hidden'>
         
          {/* Heading Section */}
         <div className='flex flex-col items-center justify-center'>

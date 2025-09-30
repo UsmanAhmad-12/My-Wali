@@ -2,7 +2,7 @@ import React from "react";
 import { featuresImage1, featuresImage2 } from "../../assets/images/index.js";
 function Features() {
   return (
-    <div className="flex lg:flex-row flex-col px-5 md:px-20 lg:px-10 xl:px-28 py-12 md:py-24 bg-[#fafafa]"> 
+    <div className="flex lg:flex-row flex-col px-5 md:px-20 lg:px-10 xl:px-28 py-12 md:py-24 bg-[#fafafa] overflow-hidden"> 
       <div className="w-full lg:w-[67%]">
         <img data-aos="fade-down" className="h-[72px] mx-auto md:mx-0" src={featuresImage1} alt="" />
         <h1 data-aos="fade-up" className="text-[28px] md:text-[32px] text-center md:text-left lg:text-[42px] dm-serif-display lg:w-[523px] leading-[30px] lg:leading-[45px] mt-10">

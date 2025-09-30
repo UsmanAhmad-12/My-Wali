@@ -3,7 +3,7 @@ import { BsApple } from "react-icons/bs";
 import { playstore } from "../../assets/images/index.js";
 function GetTheApp() {
   return (
-    <div className="bg-[#F4F1FA]  px-5 sm:px-10 py-10 sm:py-20">
+    <div className="bg-[#F4F1FA]  px-5 sm:px-10 py-10 sm:py-20 overflow-hidden">
       <h1 data-aos="fade-down" className="text-center pt-10 dm-serif-display text-4xl md:text-5xl lg:text-[54px]">Join the<span className="text-[#5A4685]"> MyWali</span> journey</h1>
       <h5 data-aos="fade-up" className="text-center dm-serif-display text-[24px] sm:text-[27px] pt-5">Download the app</h5>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-4 mt-10 pb-10 px-4">
