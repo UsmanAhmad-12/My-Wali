@@ -91,7 +91,7 @@ const toggleFaqSection = () => {
               </div>
             </div>
             <p
-              data-aos="fade-up"
+              data-aos="fade-down"
               className="dm-serif-display text-[#0B0B19] text-xs sm:text-sm md:text-base lg:text-[21px] max-w-2xl mx-auto leading-relaxed"
             >
               What You Need to Know?
