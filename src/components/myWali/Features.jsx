@@ -2,10 +2,11 @@ import React from "react";
 import { featuresImage1, featuresImage2 } from "../../assets/images/index.js";
 function Features() {
   return (
-    <div className="flex lg:flex-row flex-col px-5 md:px-20 lg:px-10 xl:px-28 py-12 md:py-24 bg-[#fafafa] overflow-hidden"> 
+    <div className="bg-[#fafafa]">
+    <div className="flex lg:flex-row flex-col px-5 md:px-20 lg:px-10 xl:px-28 py-12 md:py-24  max-w-[1600px] mx-auto  overflow-hidden"> 
       <div className="w-full lg:w-[67%]">
-        <img data-aos="fade-down" className="h-[72px] mx-auto md:mx-0" src={featuresImage1} alt="" />
-        <h1 data-aos="fade-up" className="text-[28px] md:text-[32px] text-center md:text-left lg:text-[42px] dm-serif-display lg:w-[523px] leading-[30px] lg:leading-[45px] mt-10">
+        <img data-aos="fade-right" className="h-[72px] mx-auto md:mx-0" src={featuresImage1} alt="" />
+        <h1 data-aos="fade-right" className="text-[28px] md:text-[32px] text-center md:text-left lg:text-[42px] dm-serif-display lg:w-[523px] leading-[30px] lg:leading-[45px] mt-10">
           Marriage is a sacred journey—you shouldn’t have to walk it alone.
         </h1>
         <p data-aos="fade-right" className="montserrat tracking-tight text-[16px] mx-auto md:mx-0 lg:text-[18px] text-justify leading-[25px] w-[90%] mt-6 text-[#403F3D] font-medium">
@@ -30,6 +31,7 @@ function Features() {
       <div className="w-full lg:w-[33%] mt-10 lg:mt-0 flex items-center">
         <img data-aos="fade-left" className="md:w-[50%] lg:w-[100%]  mx-auto lg:mx-0" src={featuresImage2} alt="featursImage2" />
       </div>
+    </div>
     </div>
   );
 }

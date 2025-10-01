@@ -4,7 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 function Footer() {
   return (
-    <footer data-aos="fade-up" className="w-full overflow-hidden">
+    <footer className="w-full overflow-hidden">
       {/* Upper Section - Dark Purple Background */}
       <div className="bg-[#5C4B8B] px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto">

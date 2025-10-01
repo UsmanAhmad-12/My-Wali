@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { IoMdArrowDropdown } from "react-icons/io"
 import { HiMenuAlt3, HiX } from "react-icons/hi"
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   logo,
   ukFlag,
@@ -18,6 +19,19 @@ function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [activePage, setActivePage] = useState('MyWali') // Default active page
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const location = useLocation()
+
+  // Update active page based on current route
+  useEffect(() => {
+    const path = location.pathname
+    if (path === '/my-community') {
+      setActivePage('MyCommunity')
+    } else if (path === '/my-masjid') {
+      setActivePage('MyMasjid')
+    } else if (path === '/') {
+      setActivePage('MyWali')
+    }
+  }, [location.pathname])
 
   const countries = [
     { code: 'UK', name: 'United Kingdom', flag: ukFlag },
@@ -41,11 +55,11 @@ function Navbar() {
         </div>
         <div>
           <ul className='flex gap-8 xl:gap-12 dm-serif-display text-[#5A4685] text-xl xl:text-2xl tracking-normal'>
-            <li
+            <li 
               className='cursor-pointer relative group'
               onClick={() => setActivePage('MyWali')}
             >
-              MyWali
+              <Link to="/">MyWali</Link>
               <div
                 className={`absolute bottom-0 left-0 h-[1px] bg-[#5A4685] transition-all duration-300 ease-in-out ${activePage === 'MyWali'
                     ? 'w-full'
@@ -57,7 +71,7 @@ function Navbar() {
               className='cursor-pointer relative group'
               onClick={() => setActivePage('MyCommunity')}
             >
-              MyCommunity
+              <Link to="/my-community">MyCommunity</Link>
               <div
                 className={`absolute bottom-0 left-0 h-[1px] bg-[#5A4685] transition-all duration-300 ease-in-out ${activePage === 'MyCommunity'
                     ? 'w-full'
@@ -69,7 +83,7 @@ function Navbar() {
               className='cursor-pointer relative group'
               onClick={() => setActivePage('MyMasjid')}
             >
-              MyMasjid
+              <Link to="/my-masjid">MyMasjid</Link>
               <div
                 className={`absolute bottom-0 left-0 h-[1px] bg-[#5A4685] transition-all duration-300 ease-in-out ${activePage === 'MyMasjid'
                     ? 'w-full'
@@ -202,7 +216,7 @@ function Navbar() {
               setIsMobileMenuOpen(false)
             }}
           >
-            MyWali
+            <Link to="/">MyWali</Link>
           </li>
           <li
             className={`cursor-pointer px-4 py-3 text-lg dm-serif-display text-[#5A4685] border-l-2 transition-all duration-200 ${activePage === 'MyCommunity'
@@ -214,7 +228,7 @@ function Navbar() {
               setIsMobileMenuOpen(false)
             }}
           >
-            MyCommunity
+            <Link to="/my-community">MyCommunity</Link>
           </li>
           <li
             className={`cursor-pointer px-4 py-3 text-lg dm-serif-display text-[#5A4685] border-l-2 transition-all duration-200 ${activePage === 'MyMasjid'
@@ -226,7 +240,7 @@ function Navbar() {
               setIsMobileMenuOpen(false)
             }}
           >
-            MyMasjid
+            <Link to="/my-masjid">MyMasjid</Link>
           </li>
         </ul>
 

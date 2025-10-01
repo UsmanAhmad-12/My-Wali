@@ -8,7 +8,6 @@ import CoreFeatures from '../components/myWali/CoreFeatures'
 import Subscription from '../components/myWali/Subscription'
 import GetTheApp from '../components/myWali/GetTheApp'
 import Faq from '../components/myWali/Faq'
-import Footer from '../components/navbar-footer/Footer'
 export default function Home() {
     return (
         <div>
@@ -21,7 +20,6 @@ export default function Home() {
             <Subscription />
             <GetTheApp />
             <Faq />
-            <Footer />
         </div>
     )
 }

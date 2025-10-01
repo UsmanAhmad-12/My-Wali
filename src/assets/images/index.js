@@ -26,5 +26,15 @@ export { default as subscriptionImage1 } from "./subscriptionImage1.png";
 export { default as subscriptionImage2 } from "./subscriptionImage2.png";
 export { default as footerIcon1 } from "./footerIcon1.png";
 export { default as favicon } from "./favicon.ico";
+export { default as myCommunityHeroImage } from "./myCommunityHeroImage.png";
+export { default as communityFeaturesImage1 } from "./communityFeaturesImage1.png";
+export { default as ourCommunityImage1 } from "./ourCommunityImage1.png";
+export { default as discoverImage1 } from "./discoverImage1.png";
+export { default as discoverImage2 } from "./discoverImage2.png";
+export { default as discoverImage3 } from "./discoverImage3.png";
+export { default as discoverImage4 } from "./discoverImage4.png";
+export { default as discoverImage5 } from "./discoverImage5.png";
+export { default as howToJoinImage1 } from "./howToJoinImage1.png";
+export { default as howToJoinImage2 } from "./howToJoinImage2.png";
 
 
