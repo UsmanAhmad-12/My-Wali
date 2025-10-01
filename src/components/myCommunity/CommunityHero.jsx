@@ -5,7 +5,7 @@ import { BsApple } from "react-icons/bs"
 function Hero() {
   return (
     <div>
-            <div className='w-full py-20 sm:py-40 md:py-24  relative max-w-[1600px] mx-auto overflow-hidden'>
+            <div className='w-full py-20 sm:py-40 md:py-24  relative  overflow-hidden'>
                 
                 <video 
                     src={communityHeroVideo} 

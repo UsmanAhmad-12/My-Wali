@@ -59,7 +59,8 @@ function Flow() {
   const [activeFlow, setActiveFlow] = useState("guardian");
 
   return (
-    <div className="py-5 md:py-28 bg-[#f4f1fa] px-5 md:px-20 overflow-hidden">
+    <div className="bg-[#f4f1fa]">
+    <div className="py-5 md:py-28  px-5 md:px-20 max-w-[1600px] mx-auto overflow-hidden">
       <div className="flex justify-center  gap-4 sm:gap-6 md:gap-8">
         <div onClick={() => setActiveFlow("guardian")}>
           <button data-aos="fade-right"
@@ -119,6 +120,7 @@ function Flow() {
           ))}
         </div>
       )}
+    </div>
     </div>
   );
 }

@@ -3,7 +3,8 @@ import { BsApple } from "react-icons/bs";
 import { playstore } from "../../assets/images/index.js";
 function WhyMyWali() {
   return (
-    <div className="bg-[#f4f1fa] mx-auto overflow-hidden">
+    <div className="bg-[#f4f1fa]">
+    <div className="max-w-[1600px] mx-auto overflow-hidden">
       <div className="md:py-32 py-12">
         <h1 data-aos="fade-down" className="mx-auto text-center px-5 md:px-0 text-[32px] md:text-[42px] md:w-[50%] dm-serif-display leading-[45px] font-medium"><span className="text-[#5A4685] dm-serif-display">MyWali</span>— Born from real struggles, built for the ummah</h1>
         <p data-aos="fade-down" className="montserrat  tracking-tight  text-[13px] mx-auto lg:text-[18px] text-center leading-[25px] px-5 md:px-0 md:w-[65%] mt-12 text-[#403F3D] font-medium">
@@ -38,6 +39,7 @@ function WhyMyWali() {
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 }

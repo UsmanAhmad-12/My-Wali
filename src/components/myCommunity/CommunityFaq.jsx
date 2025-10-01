@@ -48,7 +48,8 @@ const toggleFaqSection = () => {
   setIsFaqSectionOpen(!isFaqSectionOpen);
 };
   return (
-    <div className="w-full bg-[#fafafa] px-5 sm:px-10 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 relative max-w-[1600px] mx-auto overflow-hidden">
+    <div className="bg-[#fafafa] relative">
+    <div className="w-full px-5 sm:px-10 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 max-w-[1600px] mx-auto overflow-hidden">
       <div className=" max-w-3xl mx-auto ">
         {/* Ellipse Section */}
         <div className="absolute left-0 top-[200px] sm:top-[300px] md:top-[380px]  hidden sm:block z-0">
@@ -179,6 +180,7 @@ const toggleFaqSection = () => {
 
         {/* <div data-aos="fade-up" className='text-center mt-10 dm-serif-display text-2xl lg:text-4xl font-medium text-[#5A4685]'>See all</div> */}
       </div>
+    </div>
     </div>
   );
 }
