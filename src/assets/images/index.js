@@ -36,5 +36,15 @@ export { default as discoverImage4 } from "./discoverImage4.png";
 export { default as discoverImage5 } from "./discoverImage5.png";
 export { default as howToJoinImage1 } from "./howToJoinImage1.png";
 export { default as howToJoinImage2 } from "./howToJoinImage2.png";
+export { default as logoMasjidHero } from "./logoMasjidHero.png";
+export { default as masjidFeaturesImage1 } from "./masjidFeaturesImage1.png";
+export { default as servingTheUmmahImage1 } from "./servingTheUmmahImage1.png";
+export { default as whatIsMyMasjidImage1 } from "./whatIsMyMasjidImage1.png";
+export { default as WhatIsMyMasjidImage2 } from "./WhatIsMyMasjidImage2.png";
+export { default as WhatIsMyMasjidImage3 } from "./WhatIsMyMasjidImage3.png";
+export { default as WhatIsMyMasjidImage4 } from "./WhatIsMyMasjidImage4.png";
+export { default as WhatIsMyMasjidImage5 } from "./WhatIsMyMasjidImage5.png";
+export { default as WhatIsMyMasjidImage6 } from "./WhatIsMyMasjidImage6.png";
+
 
 

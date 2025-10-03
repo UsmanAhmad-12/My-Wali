@@ -7,6 +7,7 @@ import MyCommunity from "./screens/MyCommunity.jsx";
 import Home from "./screens/Home.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import MyMasjid from "./screens/MyMasjid.jsx";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/my-community" element={<MyCommunity />} />
+            <Route path="/my-masjid" element={<MyMasjid />} />
           </Route>
         </Routes>
       </BrowserRouter>
