@@ -1,175 +1,274 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { footerIcon1 } from "../../assets/images/index.js";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+
 function Footer() {
   return (
     <footer className="w-full overflow-hidden">
       {/* Upper Section - Dark Purple Background */}
-      <div className="bg-[#5C4B8B] px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+      <div className="bg-[#1f1537] px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
         <div className="max-w-7xl mx-auto">
           {/* Mobile Layout */}
           <div className="block lg:hidden">
-            <div className="space-y-10">
-              {/* Top Section - Logo and Social Media */}
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-6 sm:space-y-0">
+            <div className="space-y-6">
+              {/* Top Section - Logo and Brand */}
+              <div className="flex flex-col items-center space-y-4">
                 {/* Logo */}
-                <div className="flex justify-center sm:justify-start">
+                <div className="flex justify-center">
                   <img
-                    className="h-20 sm:h-24"
+                    className="h-10"
                     src={footerIcon1}
                     alt="MyWali Logo"
                   />
                 </div>
-
+                {/* <h1 className="text-white text-3xl font-bold">MyWali</h1> */}
                 {/* Social Media Icons */}
-                <div className="flex justify-center sm:justify-end space-x-3">
-                  <div className="w-12 h-12 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A] transition-all duration-300 hover:scale-110">
-                    <svg
-                      className="w-5 h-5 text-white"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                    </svg>
+                <div className="flex justify-center space-x-4 mt-2">
+                  <div className="w-10 h-10 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A]">
+                    <FaTwitter className="w-4 h-4 text-white" />
                   </div>
-                  <div className="w-12 h-12 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A] transition-all duration-300 hover:scale-110">
-                    <FaFacebookF className="w-5 h-5 text-white" />
+                  <div className="w-10 h-10 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A]">
+                    <FaFacebookF className="w-4 h-4 text-white" />
                   </div>
-                  <div className="w-12 h-12 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A] transition-all duration-300 hover:scale-110">
-                    <FaInstagram className="w-5 h-5 text-white" />
+                  <div className="w-10 h-10 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A]">
+                    <FaInstagram className="w-4 h-4 text-white" />
                   </div>
                 </div>
               </div>
 
-              {/* Middle Section - Pages Navigation */}
-              <div className="bg-[#4A3C70] rounded-2xl p-6">
-                <h3 className="text-white inter font-semibold text-lg tracking-[0.09em] mb-5 text-center">
+              {/* Pages Navigation */}
+              <div className="bg-[#241A3B] rounded-xl p-4">
+                <h3 className="text-white font-semibold text-lg mb-3 text-center">
                   Pages
                 </h3>
-                <div className="grid grid-cols-1 gap-3">
-                  <a
-                    href="#"
-                    className="text-white hover:text-[#8B9B2F] transition-colors poppins text-sm py-2 px-4 rounded-lg hover:bg-white/10 text-center"
+                <div className="grid grid-cols-1 gap-2">
+                  <Link
+                    to="/"
+                    className="text-white hover:text-gray-300 transition-colors text-sm py-1 text-center"
                   >
                     MyWali
-                  </a>
-                  <a
-                    href="#"
-                    className="text-white hover:text-[#8B9B2F] transition-colors poppins text-sm py-2 px-4 rounded-lg hover:bg-white/10 text-center"
+                  </Link>
+                  <Link
+                    to="/my-community"
+                    className="text-white hover:text-gray-300 transition-colors text-sm py-1 text-center"
                   >
                     MyCommunity
-                  </a>
-                  <a
-                    href="#"
-                    className="text-white hover:text-[#8B9B2F] transition-colors poppins text-sm py-2 px-4 rounded-lg hover:bg-white/10 text-center"
+                  </Link>
+                  <Link
+                    to="/my-masjid"
+                    className="text-white hover:text-gray-300 transition-colors text-sm py-1 text-center"
                   >
                     MyMasjid
-                  </a>
+                  </Link>
                 </div>
               </div>
 
-              {/* Bottom Section - Newsletter Subscription */}
-              <div className="bg-[#4A3C70] rounded-2xl p-6">
-                <h3 className="text-white font-medium uppercase text-sm tracking-[0.2em] inter mb-4 text-center">
-                  Subscribe to Newsletter
+              {/* Support Navigation */}
+              <div className="bg-[#241A3B] rounded-xl p-4">
+                <h3 className="text-white font-semibold text-lg mb-3 text-center">
+                  Support
                 </h3>
-                <div className="space-y-4">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="w-full px-4 py-3 rounded-xl bg-white text-gray-700 placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-white/50 border-0"
-                  />
-                  <button className="w-full px-6 poppins py-3 text-sm bg-[#8B9B2F] text-white rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105">
-                    Subscribe
-                  </button>
+                <div className="grid grid-cols-1 gap-2">
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm py-1 text-center"
+                  >
+                    FAQ
+                  </Link>
+                  <Link
+                    to="/contact-us"
+                    className="text-white hover:text-gray-300 transition-colors text-sm py-1 text-center"
+                  >
+                    Contact Us
+                  </Link>
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm py-1 text-center"
+                  >
+                    Safety Tips.
+                  </Link>
+                </div>
+              </div>
+
+              {/* Privacy Terms Navigation */}
+              <div className="bg-[#241A3B] rounded-xl p-4">
+                <h3 className="text-white font-semibold text-lg mb-3 text-center">
+                  Privacy Terms
+                </h3>
+                <div className="grid grid-cols-1 gap-2">
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm py-1 text-center"
+                  >
+                    Refunds
+                  </Link>
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm py-1 text-center"
+                  >
+                    Cookies
+                  </Link>
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm py-1 text-center"
+                  >
+                    Community Guidelines.
+                  </Link>
+                </div>
+              </div>
+
+              {/* Careers Navigation */}
+              <div className="bg-[#241A3B] rounded-xl p-4">
+                <h3 className="text-white font-semibold text-lg mb-3 text-center">
+                  Careers
+                </h3>
+                <div className="grid grid-cols-1 gap-2">
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm py-1 text-center"
+                  >
+                    Join Us
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Desktop Layout */}
-          <div className="hidden lg:grid lg:grid-cols-3 gap-12">
-            {/* Left Column - Logo and Social Media */}
-            <div className="flex flex-col space-y-6">
-              <div className="flex items-center space-x-3">
+          <div className="hidden lg:flex flex-wrap justify-between items-start px-10">
+            {/* Logo and Social Icons */}
+            <div className="w-64">
+              <div className="flex flex-col">
                 <img
-                  className="h-[140px]"
+                  className="w-40 mb-5"
                   src={footerIcon1}
                   alt="MyWali Logo"
                 />
+                {/* <h1 className="text-white text-4xl font-bold mb-4">MyWali</h1> */}
+                <div className="flex space-x-3">
+                  <div className="w-8 h-8 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A]">
+                    <FaTwitter className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="w-8 h-8 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A]">
+                    <FaFacebookF className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="w-8 h-8 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A]">
+                    <FaInstagram className="w-4 h-4 text-white" />
+                  </div>
+                </div>
               </div>
-              <div className="flex space-x-4">
-                <div className="w-10 h-10 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A] transition-colors">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
+            </div>
+
+            {/* Footer columns with even spacing */}
+            <div className="flex flex-1 justify-evenly mt-10">
+              {/* Pages Column */}
+              <div className="flex flex-col">
+                <h3 className="text-white font-semibold inter tracking-wider text-lg mb-6">
+                  Pages
+                </h3>
+                <div className="flex flex-col space-y-3">
+                  <Link
+                    to="/"
+                    className="text-white hover:text-gray-300 transition-colors text-sm"
                   >
-                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                  </svg>
-                </div>
-                <div className="w-10 h-10 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A] transition-colors">
-                  <FaFacebookF className="w-4 h-4 text-white" />
-                </div>
-                <div className="w-10 h-10 bg-[#3C2A62] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#3A2F5A] transition-colors">
-                  <FaInstagram className="w-4 h-4 text-white" />
+                    MyWali
+                  </Link>
+                  <Link
+                    to="/my-community"
+                    className="text-white hover:text-gray-300 transition-colors text-sm"
+                  >
+                    MyCommunity
+                  </Link>
+                  <Link
+                    to="/my-masjid"
+                    className="text-white hover:text-gray-300 transition-colors text-sm"
+                  >
+                    MyMasjid
+                  </Link>
                 </div>
               </div>
-            </div>
 
-            {/* Middle Column - Pages Navigation */}
-            <div className="flex flex-col space-y-6 pl-10">
-              <h3 className="text-white inter font-semibold text-lg tracking-[0.09em]">
-                Pages
-              </h3>
-              <div className="flex flex-col space-y-4">
-                <a
-                  href="#"
-                  className="text-white hover:text-gray-300 transition-colors poppins text-sm"
-                >
-                  MyWali
-                </a>
-                <a
-                  href="#"
-                  className="text-white hover:text-gray-300 transition-colors poppins text-sm"
-                >
-                  MyCommunity
-                </a>
-                <a
-                  href="#"
-                  className="text-white hover:text-gray-300 transition-colors poppins text-sm"
-                >
-                  MyMasjid
-                </a>
+              {/* Support Column */}
+              <div className="flex flex-col">
+                <h3 className="text-white font-semibold inter tracking-wider text-lg mb-6">
+                  Support
+                </h3>
+                <div className="flex flex-col space-y-3">
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm"
+                  >
+                    FAQ
+                  </Link>
+                  <Link
+                    to="/contact-us"
+                    className="text-white hover:text-gray-300 transition-colors text-sm"
+                  >
+                    Contact Us
+                  </Link>
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm"
+                  >
+                    Safety Tips.
+                  </Link>
+                </div>
               </div>
-            </div>
 
-            {/* Right Column - Newsletter Subscription */}
-            <div className="flex flex-col space-y-6 pl-10">
-              <h3 className="text-white font-medium uppercase text-sm tracking-[0.2em] inter">
-                Subscribe to Newsletter
-              </h3>
-              <div className="flex flex-col space-y-3">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="px-4 py-3 rounded-lg bg-white text-gray-700 placeholder-gray-500 w-[275px] text-sm focus:outline-none focus:ring-2 focus:ring-[#5A4685]"
-                />
-                <button className="px-6 poppins py-3 text-sm bg-[#8B9B2F] text-white rounded-lg font-normal hover:bg-[#7A8A26] transition-colors w-fit">
-                  Subscribe
-                </button>
+              {/* Privacy Terms Column */}
+              <div className="flex flex-col">
+                <h3 className="text-white font-semibold inter tracking-wider text-lg mb-6">
+                  Privacy Terms
+                </h3>
+                <div className="flex flex-col space-y-3">
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm"
+                  >
+                    Refunds
+                  </Link>
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm"
+                  >
+                    Cookies
+                  </Link>
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm"
+                  >
+                    Community Guidelines.
+                  </Link>
+                </div>
+              </div>
+
+              {/* Careers Column */}
+              <div className="flex flex-col">
+                <h3 className="text-white font-semibold inter tracking-wider text-lg mb-6">
+                  Careers
+                </h3>
+                <div className="flex flex-col space-y-3">
+                  <Link
+                    to="#"
+                    className="text-white hover:text-gray-300 transition-colors text-sm"
+                  >
+                    Join Us
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom Section - Light Gray/White Gradient Background */}
-      <div className="bg-gradient-to-b from-gray-200 to-white py-3 sm:py-4">
+      {/* Bottom Section - Copyright */}
+      <div className="bg-gradient-to-b from-gray-200 to-white py-3">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-gray-600 text-xs sm:text-sm inter">
+            <p className="text-gray-600 text-xs sm:text-sm">
               © Copyright 2024, All Rights Reserved by Logo
             </p>
           </div>

@@ -47,49 +47,31 @@ function Navbar() {
   const currentCountry = countries.find(country => country.code === selectedCountry)
 
   return (
-    <div data-aos="fade-down" className='w-full bg-white py-1 relative sticky top-0 z-50'>
+    <div className='w-full bg-white py-1 relative sticky top-0 z-50'>
       {/* Desktop Navbar */}
       <div className='hidden lg:flex justify-between items-center px-4 xl:px-10 py-2'>
         <div className='w-[180px] xl:w-[219px]'>
           <img className='h-[45px] xl:h-[53px]' src={logo} alt="" />
         </div>
         <div>
-          <ul className='flex gap-8 xl:gap-12 dm-serif-display text-[#5A4685] text-xl xl:text-2xl tracking-normal'>
+          <ul className='flex gap-8 xl:gap-12 dm-serif-display text-[#A4A4A4] text-xl xl:text-2xl tracking-normal'>
             <li 
-              className='cursor-pointer relative group'
+              className='cursor-pointer'
               onClick={() => setActivePage('MyWali')}
             >
-              <Link to="/">MyWali</Link>
-              <div
-                className={`absolute bottom-0 left-0 h-[1px] bg-[#5A4685] transition-all duration-300 ease-in-out ${activePage === 'MyWali'
-                    ? 'w-full'
-                    : 'w-0 group-hover:w-full'
-                  }`}
-              />
+              <Link to="/" className={`${activePage === 'MyWali' ? 'text-[#303030]' : 'text-[#A4A4A4]'}`}>MyWali</Link>
             </li>
             <li
-              className='cursor-pointer relative group'
+              className='cursor-pointer'
               onClick={() => setActivePage('MyCommunity')}
             >
-              <Link to="/my-community">MyCommunity</Link>
-              <div
-                className={`absolute bottom-0 left-0 h-[1px] bg-[#5A4685] transition-all duration-300 ease-in-out ${activePage === 'MyCommunity'
-                    ? 'w-full'
-                    : 'w-0 group-hover:w-full'
-                  }`}
-              />
+              <Link to="/my-community" className={`${activePage === 'MyCommunity' ? 'text-[#303030]' : 'text-[#A4A4A4]'}`}>MyCommunity</Link>
             </li>
             <li
-              className='cursor-pointer relative group'
+              className='cursor-pointer'
               onClick={() => setActivePage('MyMasjid')}
             >
-              <Link to="/my-masjid">MyMasjid</Link>
-              <div
-                className={`absolute bottom-0 left-0 h-[1px] bg-[#5A4685] transition-all duration-300 ease-in-out ${activePage === 'MyMasjid'
-                    ? 'w-full'
-                    : 'w-0 group-hover:w-full'
-                  }`}
-              />
+              <Link to="/my-masjid" className={`${activePage === 'MyMasjid' ? 'text-[#303030]' : 'text-[#A4A4A4]'}`}>MyMasjid</Link>
             </li>
           </ul>
         </div>
@@ -136,7 +118,7 @@ function Navbar() {
             )}
           </div>
           <div>
-            <button className='bg-[#5A4685] montserrat rounded-full px-4 xl:px-5 py-2 xl:py-[11px] text-white text-xs xl:text-sm'>Download App</button>
+            <button className='bg-[#303030] montserrat rounded-full px-4 xl:px-5 py-2 xl:py-[11px] text-white text-xs xl:text-sm'>Download App</button>
           </div>
         </div>
       </div>
@@ -207,10 +189,11 @@ function Navbar() {
         }`}>
         <ul className='flex flex-col py-4'>
           <li
-            className={`cursor-pointer px-4 py-3 text-lg dm-serif-display text-[#5A4685] border-l-2 transition-all duration-200 ${activePage === 'MyWali'
-                ? 'border-[#5A4685] bg-gray-50'
-                : 'border-transparent hover:border-[#5A4685] hover:bg-gray-50'
-              }`}
+            className={`cursor-pointer px-4 py-3 text-lg dm-serif-display transition-all duration-200 ${
+              activePage === 'MyWali'
+                ? 'text-[#303030] bg-gray-50 border-l-2 border-[#5A4685]'
+                : 'text-[#A4A4A4] border-l-2 border-transparent hover:bg-gray-50'
+            }`}
             onClick={() => {
               setActivePage('MyWali')
               setIsMobileMenuOpen(false)
@@ -219,10 +202,11 @@ function Navbar() {
             <Link to="/">MyWali</Link>
           </li>
           <li
-            className={`cursor-pointer px-4 py-3 text-lg dm-serif-display text-[#5A4685] border-l-2 transition-all duration-200 ${activePage === 'MyCommunity'
-                ? 'border-[#5A4685] bg-gray-50'
-                : 'border-transparent hover:border-[#5A4685] hover:bg-gray-50'
-              }`}
+            className={`cursor-pointer px-4 py-3 text-lg dm-serif-display transition-all duration-200 ${
+              activePage === 'MyCommunity'
+                ? 'text-[#303030] bg-gray-50 border-l-2 border-[#5A4685]'
+                : 'text-[#A4A4A4] border-l-2 border-transparent hover:bg-gray-50'
+            }`}
             onClick={() => {
               setActivePage('MyCommunity')
               setIsMobileMenuOpen(false)
@@ -231,10 +215,11 @@ function Navbar() {
             <Link to="/my-community">MyCommunity</Link>
           </li>
           <li
-            className={`cursor-pointer px-4 py-3 text-lg dm-serif-display text-[#5A4685] border-l-2 transition-all duration-200 ${activePage === 'MyMasjid'
-                ? 'border-[#5A4685] bg-gray-50'
-                : 'border-transparent hover:border-[#5A4685] hover:bg-gray-50'
-              }`}
+            className={`cursor-pointer px-4 py-3 text-lg dm-serif-display transition-all duration-200 ${
+              activePage === 'MyMasjid'
+                ? 'text-[#303030] bg-gray-50 border-l-2 border-[#5A4685]'
+                : 'text-[#A4A4A4] border-l-2 border-transparent hover:bg-gray-50'
+            }`}
             onClick={() => {
               setActivePage('MyMasjid')
               setIsMobileMenuOpen(false)

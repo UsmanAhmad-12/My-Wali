@@ -8,7 +8,10 @@ import CoreFeatures from '../components/myWali/CoreFeatures'
 import Subscription from '../components/myWali/Subscription'
 import GetTheApp from '../components/myWali/GetTheApp'
 import Faq from '../components/myWali/Faq'
+import { useAOS } from '../hooks/useAOS'
 export default function Home() {
+    useAOS(200); // Use custom hook with 200ms delay
+    
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);

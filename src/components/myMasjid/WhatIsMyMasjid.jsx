@@ -6,7 +6,7 @@ function WhatIsMyMasjid() {
     <div className="bg-[#fafafa]">
     <div className=" py-10 max-w-[1600px] mx-auto overflow-hidden">
       <div>
-        <img data-aos="fade-down" className="mx-auto  w-[50%] md:w-[28%]" src={whatIsMyMasjidImage1} alt="" />
+        <img data-aos="fade-down" className="mx-auto  w-[70%] md:w-[28%]" src={whatIsMyMasjidImage1} alt="" />
         <p data-aos="fade-down" className="text-center px-5 sm:px-0 sm:w-[82%] mt-10 mx-auto montserrat text-[#403F3D] font-medium text-base sm:text-lg">
           MyMasjid is a dedicated feature allowing mosques to
           partner with MyWali. It is designed to empower local mosques to

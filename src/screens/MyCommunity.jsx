@@ -6,7 +6,10 @@ import Discover from '../components/myCommunity/Discover'
 import HowToJoin from '../components/myCommunity/HowToJoin'
 import JoinNow from '../components/myCommunity/JoinNow'
 import CommunityFaq from '../components/myCommunity/CommunityFaq'
+import { useAOS } from '../hooks/useAOS'
 function MyCommunity() {
+  useAOS(200); // Use custom hook with 200ms delay
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

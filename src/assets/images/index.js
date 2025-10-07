@@ -45,6 +45,8 @@ export { default as WhatIsMyMasjidImage3 } from "./WhatIsMyMasjidImage3.png";
 export { default as WhatIsMyMasjidImage4 } from "./WhatIsMyMasjidImage4.png";
 export { default as WhatIsMyMasjidImage5 } from "./WhatIsMyMasjidImage5.png";
 export { default as WhatIsMyMasjidImage6 } from "./WhatIsMyMasjidImage6.png";
+export { default as heroContactUsImage1 } from "./heroContactUsImage1.png";
+export { default as registerHero } from "./registerHero.png";
 
 
 

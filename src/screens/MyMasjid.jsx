@@ -7,7 +7,10 @@ import MasjidFaq from '../components/myMasjid/MasjidFaq';
 import Register from '../components/myMasjid/Register';
 import Participate from '../components/myMasjid/Participate';
 import GetTheMasjidApp from '../components/myMasjid/GetTheMasjidApp';
+import { useAOS } from '../hooks/useAOS';
 function MyMasjid() {
+  useAOS(200); // Use custom hook with 200ms delay
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
