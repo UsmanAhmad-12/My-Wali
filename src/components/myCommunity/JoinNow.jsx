@@ -10,7 +10,7 @@ function JoinNow() {
       <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-4 mt-10 pb-10 px-4">
         <a data-aos="fade-right"
           href="#"
-          className="flex items-center hover:bg-[#302f31] bg-black text-white px-4 py-3 sm:px-6 sm:py-5 rounded-full border-2 border-white transition-colors duration-200 w-fit"
+          className="flex items-center hover:bg-[#302f31] bg-black text-white px-4 py-3 sm:px-6 sm:py-5 rounded-full border-2 border-white transition-all hover:scale-105 duration-300 w-fit"
         >
           <img src={playstore} alt="Google Play" className="w-8 h-8 sm:w-10 sm:h-10 mr-2" />
           <div className="text-left">
@@ -23,7 +23,7 @@ function JoinNow() {
         
         <a data-aos="fade-left"
           href="#"
-          className="flex items-center hover:bg-[#302f31] bg-black text-white px-6 py-3 sm:px-8 sm:py-5 rounded-full border-2 border-white transition-colors duration-200 w-fit"
+          className="flex items-center hover:bg-[#302f31] bg-black text-white px-6 py-3 sm:px-8 sm:py-5 rounded-full border-2 border-white transition-all hover:scale-105 duration-300 w-fit"
         >
           <BsApple className="w-8 h-8 sm:w-10 sm:h-10 mr-2 sm:mr-3" />
           <div className="text-left">

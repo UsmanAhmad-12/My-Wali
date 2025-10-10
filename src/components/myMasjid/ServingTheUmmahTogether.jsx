@@ -1,5 +1,5 @@
 import React from 'react'
-import { servingTheUmmahImage1, featuresImage2 } from "../../assets/images/index.js";
+import { servingTheUmmahImage1, featuresImage2, myWaliFeaturesRightImage } from "../../assets/images/index.js"; 
 function ServingTheUmmahTogether() {
   return (
     <div className="bg-[#fafafa]">
@@ -11,10 +11,10 @@ function ServingTheUmmahTogether() {
         </h1>
         
         <p data-aos="" className="montserrat tracking-tight text-[16px] lg:text-[18px] px-5 md:px-0 mx-auto md:mx-0 text-justify leading-[25px] w-[100%] mt-6 text-[#403F3D] font-medium">
-        MyWali is more than a platform — it is a movement to restore dignity, trust, and faith in the institution of marriage. It empowers seekers to move forward with their families by their side, enables parents to guide with clarity and confidence, and equips masjids to support their communities without administrative strain. 
+        MyWali is more than a platform, it is a movement to restore dignity, trust, and faith in the institution of marriage. It empowers seekers to move forward with their families by their side, enables parents to guide with clarity and confidence, and equips masjids to support their communities without administrative strain. 
         </p>
         <p data-aos="" className="montserrat tracking-tight text-[16px] lg:text-[18px] px-5 md:px-0 mx-auto md:mx-0 text-justify leading-[25px] w-[100%] mt-6 text-[#403F3D] font-medium">
-        Through the dedicated MyMasjid feature, mosques can once again embrace their traditional role as trusted guides — offering a free, Sharia-compliant space to support families seeking marriage, share knowledge, and foster meaningful community engagement. 
+        Through the dedicated MyMasjid  feature, mosques can once again embrace their traditional role as trusted guides, offering a free, Sharia-compliant space to support families seeking marriage, share knowledge, and foster meaningful community engagement. 
         </p>
         <p data-aos="" className="montserrat tracking-tight text-[16px] lg:text-[18px] px-5 md:px-0 mx-auto md:mx-0 text-justify leading-[25px] w-[100%] mt-6 text-[#403F3D] font-medium">
         Together, we revive tradition, strengthen families, and re-establish the masjid as a trusted pillar at the heart of Muslim community life. 

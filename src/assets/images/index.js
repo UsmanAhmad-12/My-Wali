@@ -47,6 +47,24 @@ export { default as WhatIsMyMasjidImage5 } from "./WhatIsMyMasjidImage5.png";
 export { default as WhatIsMyMasjidImage6 } from "./WhatIsMyMasjidImage6.png";
 export { default as heroContactUsImage1 } from "./heroContactUsImage1.png";
 export { default as registerHero } from "./registerHero.png";
+export { default as myWaliFeaturesRightImage } from "./myWaliFeaturesRightImage.png";
+export { default as guardianFlowIcon1 } from "./guardianFlowIcon1.png";
+export { default as guardianFlowIcon2 } from "./guardianFlowIcon2.png";
+export { default as guardianFlowIcon3 } from "./guardianFlowIcon3.png";
+export { default as guardianFlowIcon4 } from "./guardianFlowIcon4.png";
+export { default as guardianFlowIcon5 } from "./guardianFlowIcon5.png";
+export { default as seekerFlowIcon1 } from "./seekerFlowIcon1.png";
+export { default as seekerFlowIcon2 } from "./seekerFlowIcon2.png";
+export { default as seekerFlowIcon3 } from "./seekerFlowIcon3.png";
+export { default as seekerFlowIcon4 } from "./seekerFlowIcon4.png";
+export { default as myCommunityFooterBg } from "./myCommunityFooterBg.png";
+export { default as myWaliFooterBg } from "./myWaliFooterBg.png";
+export { default as myMasjidFooterBg } from "./myMasjidFooterBg.png";
+export { default as howItWorksImage5 } from "./howItWorksImage5.png";
+export { default as coreFeaturesImage7 } from "./coreFeaturesImage7.png";
+export { default as coreFeaturesImage8 } from "./coreFeaturesImage8.png";
+
+
 
 
 

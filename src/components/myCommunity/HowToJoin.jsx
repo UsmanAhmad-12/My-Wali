@@ -14,11 +14,11 @@ function HowToJoin() {
           </div>
           <div className="md:w-[80%] lg:w-[60%] flex flex-col justify-center gap-2">
             <h1 className="dm-serif-display text-[25px] md:text-[30px] text-center md:text-left">
-              Option 1: MyCommunity Only (Free Access)
+              Option 1: MyCommunity Only (Free Access)
             </h1>
             <p className="montserrat w-full md:w-[80%] text-[#403f3d] font-medium  md:text-[18px] text-[16px] tracking-tight text-center md:text-left mt-7 md:mt-0">
-              Download the MyWali app and register for MyCommunity for
-              free.  Join forums, discussions, events, groups and Q&A.
+              Download the MyWali app and register for MyCommunity for
+              free. Join forums, discussions, events, groups and Q&A.
             </p>
           </div>
         </div>

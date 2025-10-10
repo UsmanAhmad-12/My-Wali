@@ -54,18 +54,18 @@ function LetsTalkMasjid() {
             </div>
             <div className='md:space-y-4 gap-5 md:gap-0 py-5 flex md:flex-col flex-row items-center justify-center '>
                 <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="0">
-                    <button className='border rounded-full border-[#B7B7B7] p-4'>
-                        <FaFacebookF />
+                    <button className='border rounded-full border-[#B7B7B7] p-4 hover:bg-[#1877F2] hover:border-[#1877F2] hover:text-white transition-all duration-300 text-gray-800'>
+                        <FaFacebookF className="transition-colors duration-300" />
                     </button>
                 </div>
-                <div data-aos="fade-left"data-aos-duration="800" data-aos-delay="100">
-                <button className='border rounded-full border-[#B7B7B7] p-4'>
-                    <FaInstagram />
+                <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                <button className='border rounded-full border-[#B7B7B7] p-4 hover:bg-[#E1306C] hover:border-[#E1306C] hover:text-white transition-all duration-300 text-gray-800'>
+                    <FaInstagram className="transition-colors duration-300" />
                 </button>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-                <button className='border rounded-full border-[#B7B7B7] p-4'>
-                    <FaTwitter />
+                <button className='border rounded-full border-[#B7B7B7] p-4 hover:bg-[#1DA1F2] hover:border-[#1DA1F2] hover:text-white transition-all duration-300 text-gray-800'>
+                    <FaTwitter className="transition-colors duration-300" />
                 </button>
                 </div>
             </div>
@@ -246,7 +246,7 @@ function LetsTalkMasjid() {
                           <button
                             type="submit"
                             onClick={handleSubmit}
-                            className="dm-serif-display bg-[#5A4685] hover:bg-[#60527e]  tracking-wider text-xl text-white px-8 py-6 rounded-3xl font-medium transition-colors duration-300 flex items-center gap-3"
+                            className="dm-serif-display bg-[#5A4685] hover:bg-[#60527e]  tracking-wider text-lg sm:text-xl text-white px-5 py-4 sm:px-8 sm:py-6 rounded-3xl font-medium transition-colors duration-300 flex items-center gap-3"
                           >
                             Submit Request
                             <span className="text-xl">

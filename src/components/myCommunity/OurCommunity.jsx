@@ -10,7 +10,7 @@ function OurCommunity() {
         </div>
         <div data-aos="fade-left" className='flex flex-col justify-center items-center px-5 md:px-0 lg:items-start w-full pt-5 lg:w-[60%] lg:pl-16'>
             <h1 className='dm-serif-display text-[rgb(90,70,133)] text-[44px] text-center lg:text-left'>MyCommunity</h1>
-            <p className='dm-serif-display leading-7 text-[18px] sm:text-[24px] md:text-[32px] sm:w-[93%] pt-4 2xl:w-[75%] sm:leading-10  text-center lg:text-left'>A trusted space where Muslims can connect, support, and uplift one another - always with faith at the center. </p>
+            <p className='dm-serif-display leading-7 text-[18px] sm:text-[24px] md:text-[32px] sm:w-[93%] pt-4 2xl:w-[75%] sm:leading-10  text-center lg:text-left'>A trusted space where Muslims can connect, support, and uplift one another, always with faith at the center.</p>
         </div>
     </div>
     </div>

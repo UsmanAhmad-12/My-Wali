@@ -6,9 +6,13 @@ import Discover from '../components/myCommunity/Discover'
 import HowToJoin from '../components/myCommunity/HowToJoin'
 import JoinNow from '../components/myCommunity/JoinNow'
 import CommunityFaq from '../components/myCommunity/CommunityFaq'
-import { useAOS } from '../hooks/useAOS'
+import Footer from '../components/navbar-footer/Footer'
+import { myCommunityFooterBg } from '../assets/images'
+// import { useAOS } from '../hooks/useAOS'
 function MyCommunity() {
-  useAOS(200); // Use custom hook with 200ms delay
+   // Use custom hook with 200ms delay
+    // useAOS(200);
+  
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,6 +26,7 @@ function MyCommunity() {
         <HowToJoin />
         <JoinNow />
         <CommunityFaq />
+        <Footer image={myCommunityFooterBg}/>
     </div>
   )
 }

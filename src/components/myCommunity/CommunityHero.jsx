@@ -21,7 +21,7 @@ function Hero() {
                 <div className='relative z-20'>
                     <div className='flex flex-col justify-center items-center'>
                         <img data-aos="fade-up" className='w-[400px] px-5 md:px-0' src={myCommunityHeroImage} alt="" />
-                        <p data-aos="fade-up" className='mt-8 w-[90%] md:w-[80%] lg:w-[87%] 2xl:w-[63%] tracking-wide text-lg sm:text-xl  md:text-2xl  montserrat text-center  text-white'>My community helps Muslims stay connected through events, updates, local initiatives <span className='font-bold'>Engage, Share & Build MyCommunity</span>
+                        <p data-aos="fade-up" className='mt-8 w-[90%] md:w-[80%] lg:w-[87%] 2xl:w-[63%] tracking-wide text-lg sm:text-xl  md:text-2xl  montserrat text-center  text-white'>My community helps Muslims stay connected through events, updates, local initiatives<span className='font-bold'> Engage, Share & Build MyCommunity</span>
                         </p>
 
 
@@ -29,7 +29,7 @@ function Hero() {
 
                             <a data-aos="fade-right"
                                 href="#"
-                                className='flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-800 transition-colors duration-200'
+                                className='flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-800 transition-all hover:scale-105 duration-300'
                             >
                                 <BsApple className='w-10 h-10 mr-3' />
                                 <div className='text-left'>
@@ -41,7 +41,7 @@ function Hero() {
 
                             <a data-aos="fade-left"
                                 href="#"
-                                className='flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-800 transition-colors duration-200'
+                                className='flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-800 transition-all hover:scale-105 duration-300'
                             >
                                 <img src={playstore} alt="Google Play" className='w-10 h-10 mr-2' />
                                 <div className='text-left'>

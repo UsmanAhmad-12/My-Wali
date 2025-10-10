@@ -29,9 +29,9 @@ function Hero() {
 
                             <a data-aos="fade-right"
                                 href="#"
-                                className='flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-800 transition-colors duration-200'
+                                className='flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-800 transition-all hover:scale-105 duration-300'
                             >
-                                <BsApple className='w-10 h-10 mr-3' />
+                                <BsApple className='w-10 h-10 mr-3 ' />
                                 <div className='text-left'>
                                     <div className='text-sm leading-none'>Download on the</div>
                                     <div className='text-2xl font-semibold leading-none'>App Store</div>
@@ -41,7 +41,7 @@ function Hero() {
 
                             <a data-aos="fade-left"
                                 href="#"
-                                className='flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-800 transition-colors duration-200'
+                                className='flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-800 transition-all hover:scale-105 duration-300'
                             >
                                 <img src={playstore} alt="Google Play" className='w-10 h-10 mr-2' />
                                 <div className='text-left'>

@@ -2,8 +2,8 @@ import React from "react";
 import { heroImage, playstore } from "../../assets/images/index.js";
 import { BsApple } from "react-icons/bs";
 import { masjidHeroVideo } from "../../assets/videos/index.js";
-import { logoMasjidHero } from "../../assets/images/index.js";
-
+import { logoMasjidHero, coreFeaturesImage6 } from "../../assets/images/index.js";
+import { Link } from "react-router-dom";
 function MasjidHero() {
   return (
     <div>
@@ -20,6 +20,12 @@ function MasjidHero() {
         <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
 
         <div className="relative z-20">
+          <div className="flex justify-end mr-5 sm:mr-10 -mt-12 sm:-mt-28 md:-mt-16 lg:-mt-12">
+            <Link to="/masjid-get-in-touch">
+            <button className="bg-[#5A4685] rounded-full px-4 py-3 sm:px-6 sm:py-4 lg:px-8 lg:py-6 text-[#ffffff] montserrat text-xs sm:text-lg cursor-pointer hover:bg-[#47376b] transition-all hover:scale-105 duration-300">Book A Presentation</button>
+            </Link>
+          </div>
+
           <div className="flex flex-col justify-center items-center">
             <img
               data-aos="fade-up"
@@ -31,8 +37,7 @@ function MasjidHero() {
               data-aos="fade-up"
               className="mt-8 w-[90%] md:w-[80%] lg:w-[83%] 2xl:w-[58%] tracking-wide text-xl  md:text-2xl montserrat text-center  text-white"
             >
-              Empowering masjids to support the matchmaking journey within their
-              communities.{" "}
+              Empowering masjids to support the matchmaking journey within their communities.{" "}
               <span className="font-bold">
                 Strengthening the community through faith, family, and marriage.
               </span>
@@ -42,7 +47,7 @@ function MasjidHero() {
               <a
                 data-aos="fade-right"
                 href="#"
-                className="flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-800 transition-colors duration-200"
+                className="flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-900 transition-all hover:scale-105 duration-300"
               >
                 <BsApple className="w-10 h-10 mr-3" />
                 <div className="text-left">
@@ -56,7 +61,7 @@ function MasjidHero() {
               <a
                 data-aos="fade-left"
                 href="#"
-                className="flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-800 transition-colors duration-200"
+                className="flex items-center bg-black text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-gray-900 transition-all hover:scale-105 duration-300"
               >
                 <img
                   src={playstore}

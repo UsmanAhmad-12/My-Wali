@@ -10,7 +10,7 @@ function MasjidFeatures() {
             Trusted Support for Families & Marriage Seekers. 
         </h1>
         <p data-aos="fade-right" className="lg:mt-16 montserrat tracking-tight text-[16px] lg:text-[18px] mx-auto md:mx-0 text-justify leading-[25px] w-[90%] mt-6 text-[#403F3D] font-medium">
-            Marriage is one of Islam’s greatest blessings. It strengthens families, builds the Ummah, and fulfils half of one’s Deen. Yet today, many young Muslims are left to search alone. Parents feel powerless in a digital world of unsuitable apps and un-Islamic pathways, while masjids — once central to community life — have been sidelined.
+            Marriage is one of Islam’s greatest blessings. It strengthens families, builds the Ummah, and fulfils half of one’s Deen. Yet today, many young Muslims are left to search alone. Parents feel powerless in a digital world of unsuitable apps and un-Islamic pathways, while masjids, once central to community life, have been sidelined.
         </p>
         <p data-aos="fade-right" className="montserrat tracking-tight text-[16px] lg:text-[18px] mx-auto md:mx-0 text-justify leading-[26px] w-[90%] mt-6 text-[#403F3D] font-medium">
              MyWali was created to change this. Rooted in Islamic values, it restores dignity to the marriage process by placing guardians at the centre, protecting seekers, and reconnecting masjids with families in guiding the marriage journey. 

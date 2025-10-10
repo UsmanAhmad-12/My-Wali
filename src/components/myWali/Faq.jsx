@@ -4,7 +4,7 @@ import { ellipse } from '../../assets/images/index.js';
 
 const Faq = () => {
     const [activeIndex, setActiveIndex] = useState(1); // Start with second question expanded as shown in image
-    const [isFaqSectionOpen, setIsFaqSectionOpen] = useState(false); // Control visibility of entire FAQ section
+    const [isFaqSectionOpen, setIsFaqSectionOpen] = useState(true); // Control visibility of entire FAQ section
 
     const faqData = [
         {
@@ -45,36 +45,42 @@ const Faq = () => {
         <div className='bg-[#fafafa] relative'>
         <div className='w-full  px-5 sm:px-10 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20  max-w-[1600px] mx-auto overflow-hidden'>
         <div className=" max-w-3xl mx-auto ">
-            {/* Ellipse Section */}
-            <div className='absolute left-0 top-[200px] sm:top-[300px] md:top-[380px]  hidden sm:block z-0'>
-               <img className='w-[60px] sm:w-[120px] md:w-[150px] opacity-30' src={ellipse} alt="elipse" />
-           </div>
-            <div className='absolute   right-0 rotate-180 hidden sm:block z-0'>
-               <img className='w-[60px] sm:w-[120px] md:w-[150px] opacity-30' src={ellipse} alt="elipse" />
-            </div>
+            {/* Ellipse Section - Now conditionally rendered */}
+            {isFaqSectionOpen && (
+                <>
+                    <div className='absolute left-0 top-[200px] sm:top-[300px] md:top-[380px] hidden sm:block z-0 transition-opacity duration-500 ease-in-out opacity-0 animate-fadeIn' 
+                         style={{animation: 'fadeIn 0.8s forwards'}}>
+                        <img className='w-[60px] sm:w-[120px] md:w-[150px] opacity-30' src={ellipse} alt="elipse" />
+                    </div>
+                    <div className='absolute right-0 rotate-180 hidden sm:block z-0 transition-opacity duration-500 ease-in-out opacity-0 animate-fadeIn'
+                         style={{animation: 'fadeIn 0.8s forwards', animationDelay: '0.2s'}}>
+                        <img className='w-[60px] sm:w-[120px] md:w-[150px] opacity-30' src={ellipse} alt="elipse" />
+                    </div>
+                </>
+            )}
 
             {/* Section Header - Now Clickable */}
             <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
-                <button
-                    onClick={toggleFaqSection}
-                    className="focus:outline-none transition-all duration-300 ease-in-out hover:opacity-80 hover:scale-105 active:scale-95"
-                >
+                {/* <button */}
+                    {/* // onClick={toggleFaqSection} */}
+                    {/* // className="focus:outline-none transition-all duration-300 ease-in-out hover:opacity-80 hover:scale-105 active:scale-95" */}
+                {/* // > */}
                     <div className="flex items-center justify-center gap-3 mb-2 sm:mb-3 md:mb-4">
-                        <h2 data-aos="fade-down" className="dm-serif-display text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#5A4685]">
+                        <h2 data-aos="fade-down" className="dm-serif-display text-4xl md:text-3xl lg:text-4xl font-medium text-[#5A4685]">
                             FAQ's
                         </h2>
-                        <div data-aos="fade-down" className="flex-shrink-0 transition-transform duration-300 ease-in-out">
+                        {/* <div data-aos="fade-down" className="flex-shrink-0 transition-transform duration-300 ease-in-out">
                             {isFaqSectionOpen ? (
                                 <IoMdArrowUp className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-[#5A4685] transition-all duration-300 ease-in-out" />
                             ) : (
                                 <IoMdArrowDown  className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-[#5A4685] transition-all duration-300 ease-in-out" />
                             )}
-                        </div>
+                        </div> */}
                     </div>
-                    <p data-aos="fade-down" className="dm-serif-display text-[#0B0B19] text-xs sm:text-sm md:text-base lg:text-[21px] max-w-2xl mx-auto leading-relaxed">
+                    <p data-aos="fade-down" className="dm-serif-display text-[#0B0B19] text-base sm:text-sm md:text-base lg:text-[21px] max-w-2xl mx-auto leading-relaxed">
                         What You Need to Know?
                     </p>
-                </button>
+                {/* </button> */} 
             </div>
 
             {/* FAQ Items - Now with conditional rendering */}
@@ -106,7 +112,7 @@ const Faq = () => {
                                 }`}
                             >
                                 <div className="flex items-start sm:items-center justify-between gap-2 sm:gap-3">
-                                    <h3 className={`dm-serif-display text-xs sm:text-sm md:text-base lg:text-lg font-medium leading-tight sm:leading-relaxed flex-1 ${
+                                    <h3 className={`dm-serif-display text-sm md:text-base lg:text-lg font-medium leading-tight sm:leading-relaxed flex-1 ${
                                         activeIndex === index ? 'text-[#5A4685]' : 'text-gray-900'
                                     }`}>
                                         {faq.question}
@@ -132,7 +138,7 @@ const Faq = () => {
                                         ? 'opacity-100 translate-y-0' 
                                         : 'opacity-0 translate-y-1'
                                 }`}>
-                                    <p className="montserrat tracking-tight text-black text-xs sm:text-sm 2xl:text-base leading-relaxed">
+                                    <p className="montserrat tracking-tight text-black text-sm 2xl:text-base leading-relaxed">
                                         {faq.answer}
                                     </p>
                                 </div>
@@ -145,6 +151,14 @@ const Faq = () => {
            {/* <div data-aos="fade-up" className='text-center mt-10 dm-serif-display text-2xl lg:text-4xl font-medium text-[#5A4685]'>See all</div> */}
         </div>
         </div>
+        
+        {/* Add fadeIn animation keyframes */}
+        <style jsx>{`
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 0.3; }
+            }
+        `}</style>
         </div>
     );
 };

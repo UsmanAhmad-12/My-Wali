@@ -5,33 +5,34 @@ import Navbar from "./components/navbar-footer/Navbar.jsx";
 import Footer from "./components/navbar-footer/Footer.jsx";
 import MyCommunity from "./screens/MyCommunity.jsx";
 import Home from "./screens/Home.jsx";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import MyMasjid from "./screens/MyMasjid.jsx";
-import { useAOS } from "./hooks/useAOS.js";
+// import { useAOS } from "./hooks/useAOS.js";
 import ContactUs from "./screens/ContactUs.jsx";
 import RegisterMasjid from "./screens/RegisterMasjid.jsx";
 import MyMasjidGetInTouch from "./screens/MyMasjidGetInTouch.jsx";
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      offset: 50,
-      delay: 0,
-      anchorPlacement: 'top-bottom',
-      easing: 'ease-in-out',
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     once: true,
+  //     offset: 50,
+  //     delay: 0,
+  //     anchorPlacement: 'top-bottom',
+  //     easing: 'ease-in-out',
+  //   });
+  // }, []);
   const Layout = () => {
-    useAOS(100); // Use custom hook with 100ms delay for route changes
+    // Use custom hook with 100ms delay for route changes
+    // useAOS(100); 
     
     return (
       <div>
         <Navbar />
         <Outlet />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   };

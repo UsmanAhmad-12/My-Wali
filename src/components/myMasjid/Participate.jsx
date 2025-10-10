@@ -31,17 +31,17 @@ function Participate() {
           </div>
           <div className="md:w-[80%] lg:w-[64%] flex flex-col justify-center gap-2">
             <h1 className="dm-serif-display text-[25px] md:text-[30px] text-center md:mt-16 md:text-left">
-             Option 1: Guide Families Toward a Trusted Path
+               Option 1: Guide Families Toward a Trusted Path
             </h1>
             <p className="montserrat w-full md:w-[80%] lg:w-[100%] text-[#403f3d] font-medium  md:text-[18px] text-[16px] tracking-tight text-center md:text-left mt-7 md:mt-0">
-                Without directly managing marriage requests, your masjid can play a vital role in signposting families and seekers to MyWali. This can be done through khutbahs, posters, WhatsApp groups, and social media channels. 
+                Empower your community by connecting families and seekers to MyWali, without managing marriage requests directly. Through khutbahs, posters, WhatsApp groups, or social media, your masjid can offer a dignified, Sharia-compliant alternative to unregulated apps and informal matchmaking.
             </p>
             <p className="montserrat w-full md:w-[80%] lg:w-[100%] text-[#403f3d] font-medium  md:text-[17px] text-[16px] tracking-tight text-center md:text-left mt-7 md:mt-3">
-                MyWali provides a dignified, Islamic alternative to unregulated apps and informal matchmaking. Families feel supported, seekers gain reassurance, and your masjid is recognised as a trusted source of guidance. 
+                Families feel supported, seekers gain reassurance, and your masjid is recognised as a trusted source of guidance. Plus, every referral using your masjid’s unique code unlocks subsidised MyWali memberships for your community.
             </p>
-            <p className="montserrat w-full md:w-[80%] lg:w-[100%] text-[#403f3d] font-medium  md:text-[18px] text-[16px] tracking-tight text-center md:text-left mt-7 md:mt-3">
+            {/* <p className="montserrat w-full md:w-[80%] lg:w-[100%] text-[#403f3d] font-medium  md:text-[18px] text-[16px] tracking-tight text-center md:text-left mt-7 md:mt-3">
             Each referral made using your masjid’s unique code also gives families access to subsidised MyWali memberships.  
-            </p>
+            </p> */}
           </div>
         </div>
         {/* 2nd Card */}
@@ -49,20 +49,20 @@ function Participate() {
           <div className="w-[80%] md:w-[40%] lg:w-[17%] ">
             <img className="" src={howToJoinImage2} alt="" />
           </div>
-          <div className="md:w-[80%] lg:w-[64%] flex flex-col justify-center gap-2">
-            <div className="md:ml-auto md:mr-0 md:w-[80%] ">
+          <div className="md:w-[80%] lg:w-[64%] 2xl:w-[67%] flex flex-col justify-center gap-2">
+            <div className="md:ml-auto md:mr-0 md:w-[85%] ">
             <h1 className=" dm-serif-display md:text-[30px] text-[25px] tracking-wide md:ml-auto md:mr-0 text-center md:mt-16 md:text-left">
-                Option 2: Offer Structured Marriage Support 
+                Option 2: Offer Structured Marriage Support
             </h1>
             <p className="montserrat w-full md:w-[100%] text-[#403f3d] font-medium  md:text-[18px] text-[16px] tracking-tight text-center md:text-left mt-7 md:mt-3">
-            For masjids wishing to take a more active role, MyWali equips Imams and organisation members with secure tools to support families with structure and trust.
+            Take a more active role in guiding your community with secure, easy-to-use tools for Imams and organisation members. Masjids offering matrimonial services can access MyWali’s secure marriage database to identify suitable candidates within their community, while MyWali handles the technology, privacy, and admin.
             </p>
             <p className="montserrat w-full md:w-[100%] text-[#403f3d] font-medium  md:text-[17px] text-[16px] tracking-tight text-center md:text-left mt-7 md:mt-3">
-            Masjids offering matrimonial services can access MyWali’s secure marriage database to help identify suitable candidates within their community.
+            This lets your masjid provide structured, trustworthy support without the operational burden.
             </p>
-            <p className="montserrat w-full md:w-[100%] text-[#403f3d] font-medium  md:text-[18px] text-[16px] tracking-tight text-center md:text-left mt-7 md:mt-3">
+            {/* <p className="montserrat w-full md:w-[100%] text-[#403f3d] font-medium  md:text-[18px] text-[16px] tracking-tight text-center md:text-left mt-7 md:mt-3">
             MyWali manages the technology and privacy — allowing your masjid to guide families effectively, without the burden of running a platform or handling admin.
-            </p>
+            </p> */}
             </div>
           </div>
         </div>

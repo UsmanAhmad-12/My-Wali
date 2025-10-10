@@ -1,37 +1,93 @@
-import React from 'react'
-import {discoverImage1, discoverImage2, discoverImage3, discoverImage4, discoverImage5 } from '../../assets/images/index.js'
+import React from "react";
+import {
+  discoverImage1,
+  discoverImage2,
+  discoverImage3,
+  discoverImage4,
+  discoverImage5,
+  ellipse,
+} from "../../assets/images/index.js";
+import RightLeftSections from "../RightLeftSections.jsx";
+import {
+  coreFeaturesImage3,
+  coreFeaturesImage2,
+  coreFeaturesImage5,
+  coreFeaturesImage4,
+  coreFeaturesImage6,
+} from "../../assets/images/index.js";
 function Discover() {
   return (
-    <div className='bg-[#f4f1fa]'>
-    <div className='py-12 lg:py-24 px-10 lg:px-16 xl:px-20 max-w-[1600px] mx-auto overflow-hidden'>
-      <div data-aos="fade-down" className='flex justify-center'>
-        <img className=' w-[80%] lg:w-[45%] object-cover' src={discoverImage1} alt="" />
-      </div>
-      <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-3 lg:gap-5  mt-20 '>
-        <div data-aos="fade-down" data-aos-duration="1500" className='flex flex-col items-center  sm:pt-0'>
-          <img className='w-[110px]' src={discoverImage2} alt="" />
-          <h6 className='text-[22px] text-center dm-serif-display'>Community Engagement</h6>
-          <p className='text-center montserrat text-[#403F3D] font-medium text-xs mt-3 w-[80%] lg:w-full '>Share ideas & posts, spark meaningful discussions, create polls, and create online groups.</p>
+    <div className="bg-[#f4f1fa] relative">
+      <div className="py-12 lg:py-24 px-10 lg:px-16 xl:px-20 max-w-[1600px] mx-auto overflow-hidden">
+        <div className="absolute top-[200px] sm:top-[300px] md:top-[280px] right-0 rotate-180 hidden sm:block z-0">
+          <img
+            className="w-[80px] sm:w-[120px] md:w-[130px] opacity-30"
+            src={ellipse}
+            alt="elipse"
+          />
         </div>
-        <div data-aos="fade-down" data-aos-duration="2000" className='flex flex-col items-center pt-12 sm:pt-0'>
-          <img className='w-[110px]' src={discoverImage3} alt="" />
-          <h6 className='text-[22px] text-center dm-serif-display'>Recognition Badges</h6>
-          <p className='text-center montserrat mt-3 text-[#403F3D] font-medium text-xs md:w-[80%] xl:w-full'>Earn Bronze, Silver, Gold, and Platinum badges for positive contributions. Active, constructive voices are highlighted and celebrated enabling users to become recognised within MyCommunity </p>
+        <div className="absolute top-[400px] sm:top-[600px] md:top-[800px] left-0 hidden sm:block z-0">
+          <img
+            className="w-[80px] sm:w-[120px] md:w-[150px] opacity-30"
+            src={ellipse}
+            alt="elipse"
+          />
         </div>
-        <div data-aos="fade-down" data-aos-duration="2500" className='flex flex-col items-center pt-12 lg:pt-0'>
-          <img className='w-[110px]' src={discoverImage4} alt="" />
-          <h6 className='text-[22px] text-center dm-serif-display'> Seemless MyWali Integration</h6>
-          <p className='text-center montserrat mt-3 text-[#403F3D] font-medium text-xs w-[80%] xl:w-full'>All MyWali users gain instant access to MyCommunity, creating a unified experience that connects marriage and community. </p>
+        {/* <div className="absolute top-[500px] sm:top-[800px] md:top-[1500px] right-0 rotate-180 hidden sm:block z-0">
+          <img
+            className="w-[80px] sm:w-[120px] md:w-[150px] opacity-30"
+            src={ellipse}
+            alt="elipse"
+          />
+        </div> */}
+
+        <div data-aos="fade-down" className="flex justify-center">
+          <img
+            className=" w-[80%] lg:w-[45%] object-cover"
+            src={discoverImage1}
+            alt=""
+          />
         </div>
-        <div data-aos="fade-down" data-aos-duration="3000" className='flex flex-col items-center pt-12 lg:pt-0'>
-          <img className='w-[110px]' src={discoverImage5} alt="" />
-          <h6 className='text-[22px] text-center dm-serif-display'>Organise Events</h6>
-          <p className='text-center montserrat mt-3 text-[#403F3D] font-medium text-xs w-[80%] xl:w-full'>Enabling members and organizations to create, share, and manage events with ease, whether online or in person, helping the Muslim community stay connected and engaged.</p>
+        <div className="bg-[#f4f1fa]">
+          <div className="px-4 sm:px-8 md:px-7 lg:px-20 xl:px-32 mt-10 sm:mt-16 md:mt-20 relative z-10">
+            <div>
+              {RightLeftData?.map((items, index) => (
+                <RightLeftSections
+                  icon={items.icon}
+                  heading={items.heading}
+                  para={items.para}
+                  index={index}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Discover
+export default Discover;
+
+const RightLeftData = [
+  {
+    icon: discoverImage2,
+    heading: "Community Engagement",
+    para: "Share ideas & posts, spark meaningful discussions, create polls, and create online groups.",
+  },
+  {
+    icon: discoverImage3,
+    heading: "Recognition Badges",
+    para: "Earn badges reflecting your contribution to MyCommunity",
+  },
+  {
+    icon: discoverImage4,
+    heading: "Build Your Presence, Earn Trust",
+    para: " By asking questions, offering guidance, or sharing experiences in MyCommunity, you actively shape your profile and reputation. This creates a more authentic, holistic picture of who you are, helping other MyWali members understand your character and values, so connections are based on real insight, trust, and authenticity.",
+  },
+  {
+    icon: discoverImage5,
+    heading: "Organise Events",
+    para: "Enabling members and organizations to create, share, and manage events with ease, whether online or in person, helping the Muslim community stay connected and engaged.",
+  },
+];
